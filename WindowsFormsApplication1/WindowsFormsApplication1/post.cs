@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
 {
     class post
     {
-        public string postquery(string query, string url)
+        public string postquery(string url, string query)
         {
             WebResponse result = null;
             WebRequest req = null;
@@ -57,15 +57,12 @@ namespace WindowsFormsApplication1
                     strOut += str;
                     count = sr.Read(read, 0, 256);
                 }
-
-                //Message mess = JsonConvert.DeserializeObject<Message>(strOut);
                 return strOut;
             }
 
             catch (Exception ex)
             {
                 return "ОШИБКА: не загруженно";
-                //MessageBox.Show("ОШИБКА: не загруженно");
             }
 
             finally

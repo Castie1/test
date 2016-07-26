@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
-{ 
+{
     static class Program
     {
 
@@ -16,5 +16,6 @@ namespace WindowsFormsApplication1
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
-    } 
+
+    }
 }
