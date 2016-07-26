@@ -29,6 +29,7 @@ namespace WindowsFormsApplication1
             try
             {
                 // Url запрашиваемого методом POST скрипта
+                // Url запрашиваемого методом POST скрипта
                 req = WebRequest.Create(url);
                 req.Method = "POST";
                 req.Timeout = 120000;
